@@ -16,6 +16,7 @@ nohup ngrep "PASS|USER|+OK Mailbox open" -d any port 110 |grep -e USER -e PASS -
 
 spammon.py - Monitors postfix logs for users that may be sending/recieving a lot of spam
    sends email to brian and monitor at cws when a user sends over a set limit in 1 hour
+
    usage: python spammon.py
    Can be appended to /etc/rc.local with the following
    nohup /path/to/spammon.py &>/var/log/spammon.log &
