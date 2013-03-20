@@ -35,7 +35,7 @@ for user in users:
 	print "insert into alias values('%s','%s','%s',now(),now(),1);"%(user,user,domain)
 	
 for domain in domains:
-	print "insert into domain values('%s','',25,25,1024,1024,'virtual',0,now(),now(),1);"%(domain)
+	print "insert into domain values('%s','',25,25,2048,2048,'virtual',0,now(),now(),1);"%(domain)
 
 for user in users:
 	try:
